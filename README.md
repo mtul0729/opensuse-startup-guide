@@ -16,7 +16,7 @@
   7. 完成
 ## [安装codecs]（https://en.opensuse.org/SDB:Installing_codecs_from_Packman_repositories#Option_3:_YaST）
 ## 安装软件
-`zypper in aria2 yt-dlp thunderbird zsh opi`
+`zypper in aria2 yt-dlp thunderbird zsh opi torbrowser`
 ### 安装 ohmyzsh
 ```bash
 wget https://ghproxy.com/https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
