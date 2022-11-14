@@ -6,6 +6,7 @@ wget https://ghproxy.com/https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/maste
 sh install.sh
 ```
 3. 安装clion ，thunderbird
-4. 卸载kmail
-5. 安装exfat，ntfs支持
-6. 
+4. `zypper in yt-dlp`
+5. 卸载kmail
+6. 安装exfat，ntfs支持
+7. 
