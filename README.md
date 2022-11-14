@@ -1,6 +1,6 @@
 # config-opensuse
-1. 清华packman
-2. 安装zsh ohmyzsh
+1. [清华packman](https://mirrors.tuna.tsinghua.edu.cn/help/opensuse/)
+3. 安装zsh ohmyzsh
 ```bash
 wget https://ghproxy.com/https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
 sh install.sh
