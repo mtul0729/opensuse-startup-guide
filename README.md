@@ -26,5 +26,11 @@ sh install.sh
 ## 安装clion
 通过[Toolbox App](https://www.jetbrains.com/toolbox-app/)安装、管理Clion更方便，
 ## 卸载kmail，安装thunderbird
+##安装笔记软件
+
+不需要啦～
 ## 安装exfat，ntfs支持
+
+Yast内搜索关键字
+  
  
