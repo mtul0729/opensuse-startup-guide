@@ -17,7 +17,7 @@
   7. 完成
 ## [安装codecs](https://en.opensuse.org/SDB:Installing_codecs_from_Packman_repositories#Option_3:_YaST)
 ## 安装软件
-`zypper in aria2 yt-dlp thunderbird zsh opi torbrowser`
+`zypper in aria2 yt-dlp zsh opi torbrowser`
 ### 安装 ohmyzsh
 ```bash
 wget https://ghproxy.com/https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
@@ -25,6 +25,6 @@ sh install.sh
 ```
 ## 安装clion
 通过[Toolbox App](https://www.jetbrains.com/toolbox-app/)安装、管理Clion更方便，
-## 卸载kmail
+## 卸载kmail，安装thunderbird
 ## 安装exfat，ntfs支持
  
