@@ -20,6 +20,7 @@
      6. 点击下一步，等待源刷新
      7. 完成
 ## [安装codecs](https://en.opensuse.org/SDB:Installing_codecs_from_Packman_repositories#Option_3:_YaST)
+没有这个就看不了B站啦！！
 ## 安装各类软件
 ### 通过Yast安装一些软件
   打开Yast,按需搜索安装以下软件（每个安装包都有description，查看以了解该软件）
