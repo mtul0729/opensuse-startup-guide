@@ -25,7 +25,7 @@
         1. 安装KDE桌面环境（按照个人喜爱吧，目前我用KDE比较顺心）
         2. 在最后的Summary检查安装配置，发现Software选项还可以~~折腾~~配置一下。发现Game,Office两个pattern不需要，取消勾选。点击details,又发现可以安装特定软件。搜索pppoe，安装相关软件，方便启动系统后直接拨号上网。
     6. 确认安装，等待安装完成后会自动重启至OpenSUSE
-3. [安装好OpenSUSE之后你应该做的事](https://github.com/mtul0729/config-opensuse/blob/main/Post-installion.md) 
+3. 安装好OpenSUSE之后你应该做的事
     1. 联网
              + networkmanager连接wifi
              + 如果是拨号上网，确保已经安装PPPoE支持。在networkmanager里添加一个dsl的连接
