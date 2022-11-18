@@ -24,15 +24,15 @@
 ## 安装各类软件
 ### 通过Yast安装一些软件
   打开Yast,按需搜索安装以下软件（每个安装包都有description，查看以了解该软件）
-  + zsh —— 搭配下面提到的ohmyzsh使你更轻松地敲命令
-  + gh —— github的命令行官方客户端，方便把git仓库托管到github。
-  + mozillathunderbird —— email客户端
-  + fcitx5-chinese-addons —— linux上非常先进的fcitx5平台的中文输入法（安装之后再打开input method > Add Input Method > 搜索“Pinyin” > Add > OK,这才能启用）
-  + yt-dlp —— 可以把各类视频网站的的视频下载下来（未必能下载b站1080P视频）
-  + exfat-utils —— 用以支持exfat文件系统（现在U盘很多出厂默认使用exfat,所以建议安装）
-  + ntfsprogs —— 支持ntfs文件系统（。。。懒得解释）
-  + torbrowser-launcher —— 用来安装、启动torbrowser（翻墙才能安装）
-  + telegram-desktop —— 不用解释
+  + `zsh` —— 搭配下面提到的ohmyzsh使你更轻松地敲命令
+  + `gh` —— github的命令行官方客户端，方便把git仓库托管到github。
+  + `mozillathunderbird` —— email客户端
+  + `fcitx5-chinese-addons` —— linux上非常先进的fcitx5平台的中文输入法（安装之后再打开input method > Add Input Method > 搜索“Pinyin” > Add > OK,这才能启用）
+  + `yt-dlp` —— 可以把各类视频网站的的视频下载下来（未必能下载b站1080P视频）
+  + `exfat-utils` —— 用以支持exfat文件系统（现在U盘很多出厂默认使用exfat,所以建议安装）
+  + `ntfsprogs` —— 支持ntfs文件系统（。。。懒得解释）
+  + `torbrowser-launcher` —— 用来安装、启动torbrowser（翻墙才能安装）
+  + `telegram-desktop` —— 不用解释
 ### 安装仓库里找不到的软件 
   1. 安装 ohmyzsh
   ```bash
