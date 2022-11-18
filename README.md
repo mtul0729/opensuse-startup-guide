@@ -25,36 +25,34 @@
         1. 安装KDE桌面环境（按照个人喜爱吧，目前我用KDE比较顺心）
         2. 在最后的Summary检查安装配置，发现Software选项还可以~~折腾~~配置一下。发现Game,Office两个pattern不需要，取消勾选。点击details,又发现可以安装特定软件。搜索pppoe，安装相关软件，方便启动系统后直接拨号上网。
     6. 确认安装，等待安装完成后会自动重启至OpenSUSE
-3. [配置](https://github.com/mtul0729/config-opensuse/blob/main/Post-installion.md)
-    安装好OpenSUSE之后你应该做的事
+3. [安装好OpenSUSE之后你应该做的事](https://github.com/mtul0729/config-opensuse/blob/main/Post-installion.md) 
     1. 联网
              + networkmanager连接wifi
              + 如果是拨号上网，确保已经安装PPPoE支持。在networkmanager里添加一个dsl的连接
-             2. 配置国内仓库镜像 (以Tumbleweed为例)
-                这里我选择的是清华的[tuna源](https://mirrors.tuna.tsinghua.edu.cn/help/opensuse/)
-         ```
-         sudo zypper mr -da
-         sudo zypper ar -cfg 'https://mirrors.tuna.tsinghua.edu.cn/opensuse/tumbleweed/repo/oss/' tuna-oss
-         sudo zypper ar -cfg 'https://mirrors.tuna.tsinghua.edu.cn/opensuse/tumbleweed/repo/non-oss/' tuna-non-oss
-         ```
-    2. 添加[清华packman镜像](https://mirrors.tuna.tsinghua.edu.cn/help/opensuse/)（安装codecs必需）
-        1. 打开YaST
-        2. 进入YaST软件源（仓库管理）
-        3. 点击添加
-        4. 选择指定URL
-        5. 输入名称与对应的URL
-           tuna-packman  
-           https://mirrors.tuna.tsinghua.edu.cn/packman/suse/openSUSE_Tumbleweed/
-        6. 点击下一步，等待源刷新
-        7. 完成
-    3. [安装codecs](https://en.opensuse.org/SDB:Installing_codecs_from_Packman_repositories#Option_3:_YaST)
-       没有这个就看不了**B站**啦！！
+    2. 配置国内仓库镜像 (以Tumbleweed为例)
+       1. 更换官方仓库  
+       这里我选择的是清华的[tuna源](https://mirrors.tuna.tsinghua.edu.cn/help/opensuse/)
+          ```
+          sudo zypper mr -da
+          sudo zypper ar -cfg 'https://mirrors.tuna.tsinghua.edu.cn/opensuse/tumbleweed/repo/oss/' tuna-oss
+          sudo zypper ar -cfg 'https://mirrors.tuna.tsinghua.edu.cn/opensuse/tumbleweed/repo/non-oss/' tuna-non-oss
+          ```
+       2. 添加[清华packman镜像](https://mirrors.tuna.tsinghua.edu.cn/help/opensuse/)（安装codecs必需）
+           1. 打开YaST
+           2. 进入YaST软件源（仓库管理）
+           3. 点击添加
+           4. 选择指定URL
+           5. 输入名称`tuna-packman`与对应的URL`https://mirrors.tuna.tsinghua.edu.cn/packman/suse/openSUSE_Tumbleweed/`
+           6. 点击下一步，等待源刷新
+           7. 完成
+    3. [安装codecs](https://en.opensuse.org/SDB:Installing_codecs_from_Packman_repositories#Option_3:_YaST)  
+       安装前确保添加了[清华packman镜像](https://mirrors.tuna.tsinghua.edu.cn/help/opensuse/)。没有codecs就看不了**B站**啦！！
     4. 安装各类软件
-       - 通过Yast安装一些软件
-         打开Yast,按需搜索安装以下软件（每个安装包都有description，查看以了解该软件）
+       - 通过Yast安装一些软件  
+         打开Yast,按需搜索安装以下软件
            + `zsh` —— 搭配下面提到的ohmyzsh使你更轻松地敲命令
            + `gh` —— github的命令行官方客户端，方便把git仓库托管到github。
-           + `mozillathunderbird` —— email客户端
+           + `mozillathunderbird` —— 一个email客户端
            + `fcitx5-chinese-addons` —— linux上非常先进的fcitx5平台的中文输入法（安装之后再打开input method > Add Input Method > 搜索“Pinyin” > Add > OK,这才能启用）
            + `yt-dlp` —— 可以把各类视频网站的的视频下载下来（未必能下载b站1080P视频）
            + `exfat-utils` —— 用以支持exfat文件系统（现在U盘很多出厂默认使用exfat,所以建议安装）
@@ -93,7 +91,7 @@
              >
              >    `sudo loginctl enable-linger username`
        - 安装翻墙软件,不止一种[方案](https://github.com/mtul0729/config-opensuse/blob/main/fanqian.md)
-    5. 劝你放弃以下行为
+    5. 一些不建议的操作
        - 安装笔记软件  
          不需要啦～,在clion里用markdown写文档，搭配git就很方便，还可以同步到github
        - 安装微信、QQ  
