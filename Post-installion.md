@@ -49,8 +49,8 @@
       3. 基于上一个方法写个shell script
 4. 安装翻墙软件,不止一种[方案](https://github.com/mtul0729/config-opensuse/blob/main/fanqian.md)
 5. 安装Resilio Sync   
-以下节选自[Resilio Sync](https://help.resilio.com/hc/en-us/articles/206178924)
-   > Running Sync under the current user
+以下节选自[Installing Sync package on Linux](https://help.resilio.com/hc/en-us/articles/206178924)
+   > **Running Sync under the current user**
    > 
    > If you want to run Sync under your current user - edit file /usr/lib/systemd/user/resilio-sync.service and change "WantedBy=multi-user.target" to "WantedBy=default.target". Save this file and then enable the service with `--user` parameter:
    >
