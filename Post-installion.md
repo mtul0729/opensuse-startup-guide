@@ -46,7 +46,7 @@
       1. 把系统改成中文
       2. 每次都敲命令`LANG=zh_CN.utf8 wps`
       3. 基于上一个方法写个shell script
-4. 安装翻墙软件
+4. 安装翻墙软件,不止一种[方案](https://github.com/mtul0729/config-opensuse/blob/main/fanqian.md)
 ### 安装笔记软件
 不需要啦～,在clion里用markdown写文档，搭配git就很方便，还可以同步到github
 ### 安装微信、QQ
