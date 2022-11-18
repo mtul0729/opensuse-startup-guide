@@ -1,7 +1,7 @@
 # 安装好OpenSUSE之后你应该做的事
 ## 联网
   + networkmanager连接wifi
-  + 如果是拨号上网，确保已经安装PPPoE支持。networkmanager里添加一个dsl
+  + 如果是拨号上网，确保已经安装PPPoE支持。在networkmanager里添加一个dsl的连接
 ## 配置国内仓库镜像 (以Tumbleweed为例)
   这里我选择的是清华的[tuna源](https://mirrors.tuna.tsinghua.edu.cn/help/opensuse/)
   ```
@@ -20,7 +20,7 @@
      6. 点击下一步，等待源刷新
      7. 完成
 ## [安装codecs](https://en.opensuse.org/SDB:Installing_codecs_from_Packman_repositories#Option_3:_YaST)
-没有这个就看不了B站啦！！
+没有这个就看不了**B站**啦！！
 ## 安装各类软件
 ### 通过Yast安装一些软件
   打开Yast,按需搜索安装以下软件（每个安装包都有description，查看以了解该软件）
@@ -48,6 +48,23 @@
       2. 每次都敲命令`LANG=zh_CN.utf8 wps`
       3. 基于上一个方法写个shell script
 4. 安装翻墙软件,不止一种[方案](https://github.com/mtul0729/config-opensuse/blob/main/fanqian.md)
+5. 安装Resilio Sync   
+以下节选自[Resilio Sync](https://help.resilio.com/hc/en-us/articles/206178924)
+   > Running Sync under the current user
+   > 
+   > If you want to run Sync under your current user - edit file /usr/lib/systemd/user/resilio-sync.service and change "WantedBy=multi-user.target" to "WantedBy=default.target". Save this file and then enable the service with `--user` parameter:
+   >
+   > `systemctl --user enable resilio-sync`
+   > 
+   > Systemctl can be also run with the following arguments: `start, stop, enable, disable, status`
+    >
+   > For example, to start Sync under current user:
+    > 
+    > `systemctl --user start resilio-sync`
+    >
+    > To force the user session to be active on headless linux, you can use command:
+    > 
+    > `sudo loginctl enable-linger username`
 ### 安装笔记软件
 不需要啦～,在clion里用markdown写文档，搭配git就很方便，还可以同步到github
 ### 安装微信、QQ
