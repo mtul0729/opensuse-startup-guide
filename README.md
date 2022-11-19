@@ -32,7 +32,7 @@
     2. 配置国内仓库镜像 (以Tumbleweed为例)
        1. 更换官方仓库  
        这里我选择的是清华的[tuna源](https://mirrors.tuna.tsinghua.edu.cn/help/opensuse/)
-          ```
+          ```bash
           sudo zypper mr -da
           sudo zypper ar -cfg 'https://mirrors.tuna.tsinghua.edu.cn/opensuse/tumbleweed/repo/oss/' tuna-oss
           sudo zypper ar -cfg 'https://mirrors.tuna.tsinghua.edu.cn/opensuse/tumbleweed/repo/non-oss/' tuna-non-oss
