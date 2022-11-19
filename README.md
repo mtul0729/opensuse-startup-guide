@@ -102,7 +102,7 @@
        - 安装笔记软件  
          不需要啦～,在clion里用markdown写文档，搭配git就很方便，还可以同步到github
        - 安装微信、QQ  
-         量力而为吧，反正我是放弃了。勇士可以自己到[OBS](https://build.opensuse.org/)里找个包安装。
+         目前好像没有好用又稳定方案。可以自己到[OBS](https://build.opensuse.org/)找找。
 ***
 # 至此，你应该可以开启~~糟心~~愉快的OpenSUSE之旅啦！
 # 欢迎补充！！
