@@ -54,6 +54,7 @@
            + `clang`
            + `gdb`
            + `zsh` —— 搭配下面提到的ohmyzsh使你更轻松地敲命令
+           + `opi` —— 更方便地安装OBS里的包
            + `gh` —— github的命令行官方客户端，方便把git仓库托管到github。
            + `MozillaThunderbird` —— 一个email客户端
            + `fcitx5-chinese-addons` —— linux上非常先进的fcitx5平台的中文输入法（安装之后再打开input method > Add Input Method > 搜索“Pinyin” > Add > OK,这才能启用）
@@ -65,7 +66,7 @@
          
          **或者**这样
          ```bash
-         sudo zypper install git clang gdb zsh gh MozillaThunderbird fcitx5-chinese-addons yt-dlp exfat-utils ntfsprogs torbrowser-launcher telegram-desktop
+         sudo zypper install git clang gdb zsh opi gh MozillaThunderbird fcitx5-chinese-addons yt-dlp exfat-utils ntfsprogs torbrowser-launcher telegram-desktop
          ```
        - 安装仓库里找不到的软件
            + 安装 ohmyzsh
@@ -75,12 +76,8 @@
          ```
            + 安装Clion  
              通过[Toolbox App](https://www.jetbrains.com/toolbox-app/)安装、管理Clion更方便
-           + 安装[WPS](https://www.wps.cn/product/wpslinux#)
-           1. `sudo zypper install 安装包`
-           2. 如果发现是英文，不喜欢，至少有以下方法解决
-               1. 把系统改成中文
-               2. 每次都敲命令`LANG=zh_CN.utf8 wps`
-               3. 基于上一个方法写个shell script
+           + 安装[WPS](https://www.wps.cn/product/wpslinux#)  
+             下载rpm安装包，然后`sudo zypper install /安装包/的/路径`
            + 安装Resilio Sync   
              以下节选自[Installing Sync package on Linux](https://help.resilio.com/hc/en-us/articles/206178924)
              >    **Running Sync under the current user**
@@ -99,6 +96,8 @@
              >
              >    `sudo loginctl enable-linger username`
        - 安装翻墙软件,不止一种[方案](https://github.com/mtul0729/config-opensuse/blob/main/fanqian.md)
+       - 安装腾讯会议  
+         先上[官网](https://source.meeting.qq.com/download-center.html)看看最新版本号，然后上[OBS](https://build.opensuse.org/)找，或者`opi wemeet`
     5. 一些不建议的操作
        - 安装笔记软件  
          不需要啦～,在clion里用markdown写文档，搭配git就很方便，还可以同步到github
