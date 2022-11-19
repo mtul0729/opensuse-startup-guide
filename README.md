@@ -50,15 +50,23 @@
     4. 安装各类软件
        - 通过Yast安装一些软件  
          打开Yast,按需搜索安装以下软件
+           + `git`
+           + `clang`
+           + `gdb`
            + `zsh` —— 搭配下面提到的ohmyzsh使你更轻松地敲命令
            + `gh` —— github的命令行官方客户端，方便把git仓库托管到github。
-           + `mozillathunderbird` —— 一个email客户端
+           + `MozillaThunderbird` —— 一个email客户端
            + `fcitx5-chinese-addons` —— linux上非常先进的fcitx5平台的中文输入法（安装之后再打开input method > Add Input Method > 搜索“Pinyin” > Add > OK,这才能启用）
            + `yt-dlp` —— 可以把各类视频网站的的视频下载下来（未必能下载b站1080P视频）
            + `exfat-utils` —— 用以支持exfat文件系统（现在U盘很多出厂默认使用exfat,所以建议安装）
            + `ntfsprogs` —— 支持ntfs文件系统（。。。懒得解释）
            + `torbrowser-launcher` —— 用来安装、启动torbrowser（翻墙才能安装）
-           + `telegram-desktop` —— 不用解释
+           + `telegram-desktop` —— 不用解释  
+         
+         **或者**这样
+         ```bash
+         sudo zypper install git clang gdb zsh gh MozillaThunderbird fcitx5-chinese-addons yt-dlp exfat-utils ntfsprogs torbrowser-launcher telegram-desktop
+         ```
        - 安装仓库里找不到的软件
            + 安装 ohmyzsh
          ```bash
