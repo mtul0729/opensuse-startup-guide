@@ -98,6 +98,7 @@
        - 安装翻墙软件,不止一种[方案](https://github.com/mtul0729/config-opensuse/blob/main/fanqian.md)
        - 安装腾讯会议  
          先上[官网](https://source.meeting.qq.com/download-center.html)看看最新版本号，然后上[OBS](https://build.opensuse.org/)找，或者`opi wemeet`
+       - 安装[Veracrypt](https://veracrypt.fr/en/Downloads.html)
     5. 一些不建议的操作
        - 安装笔记软件  
          不需要啦～,在clion里用markdown写文档，搭配git就很方便，还可以同步到github
