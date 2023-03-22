@@ -47,14 +47,13 @@
        6. 点击下一步，等待源刷新
        7. 完成
 3. [安装codecs](https://en.opensuse.org/SDB:Installing_codecs_from_Packman_repositories#Option_3:_YaST)  
-   安装前确保添加了[清华packman镜像](https://mirrors.tuna.tsinghua.edu.cn/help/opensuse/)。没有codecs就看不了**B站**啦！！
+   安装前确保添加一个稳定快速的packman仓库镜像，[官网](http://packman.links2linux.org/mirrors)有镜像网站列表。没有codecs就可能无法正常使用某些视频网站。
 4. 安装各类软件
    - 通过Yast安装一些软件  
      打开Yast,按需搜索安装以下软件
        + `git`
        + `clang`
        + `gdb`
-       + `zsh` —— 搭配下面提到的ohmyzsh使你更轻松地敲命令
        + `opi` —— 更方便地安装OBS里的包
        + `gh` —— github的命令行官方客户端，方便把git仓库托管到github。
        + `MozillaThunderbird` —— 一个email客户端
@@ -64,19 +63,17 @@
        + `ntfsprogs` —— 支持ntfs文件系统（。。。懒得解释）
        + `torbrowser-launcher` —— 用来安装、启动torbrowser（翻墙才能安装）
        + `telegram-desktop` —— 不用解释  
+       + `fish`  —— 也许比zsh和bash都更人性化
+       + `texlive`
      
      **或者**这样
      ```bash
-     sudo zypper install git clang gdb zsh opi gh MozillaThunderbird fcitx5-chinese-addons yt-dlp exfat-utils ntfsprogs torbrowser-launcher telegram-desktop
+     sudo zypper install git clang gdb zsh opi gh MozillaThunderbird fcitx5-chinese-addons yt-dlp exfat-utils ntfsprogs torbrowser-launcher telegram-desktop fish
      ```
    - 安装仓库里找不到的软件
-       + 安装 ohmyzsh
-     ```bash
-     wget https://ghproxy.com/https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
-     sh install.sh
-     ```
        + 安装Clion  
          通过[Toolbox App](https://www.jetbrains.com/toolbox-app/)安装、管理Clion更方便
+       + `opi vscode`
        + 安装[WPS](https://www.wps.cn/product/wpslinux#)  
          下载rpm安装包，然后`sudo zypper install /安装包/的/路径`
        + 安装Resilio Sync   
@@ -96,13 +93,13 @@
          >    To force the user session to be active on headless linux, you can use command:
          >
          >    `sudo loginctl enable-linger username`
-   - 安装翻墙软件,不止一种[方案](https://github.com/mtul0729/config-opensuse/blob/main/fanqian.md)
+   - 安装翻墙软件,比如clash for windows
    - 安装腾讯会议  
      先上[官网](https://source.meeting.qq.com/download-center.html)确认最新版本号，然后上[OBS](https://build.opensuse.org/)找，或者`opi wemeet`
    - 安装[Veracrypt](https://veracrypt.fr/en/Downloads.html)
 5. Extra
    - 安装笔记软件  
-     vscode、clion、idea等软件可以同时支持markdown和git，用来记笔记足够
+     vscode、clion、idea等软件可以同时支持markdown和git，也许可以用来记笔记。更好的选择是[logseq](logseq.com)
    - 安装微信、QQ  
      微信目前应该没有好用又稳定的方案，而[QQ](https://im.qq.com/linuxqq/index.shtml)比较好用。
 ***
