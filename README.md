@@ -31,24 +31,10 @@
          + networkmanager连接wifi
          + 如果是拨号上网，确保已经安装PPPoE支持。在networkmanager里添加一个dsl的连接
 2. 配置国内仓库镜像 (以Tumbleweed为例)
-   1. 更换官方仓库  
-   这里我选择的是清华的[tuna源](https://mirrors.tuna.tsinghua.edu.cn/help/opensuse/)
-      ```bash
-      sudo zypper mr -da
-      sudo zypper ar -cfg 'https://mirrors.tuna.tsinghua.edu.cn/opensuse/tumbleweed/repo/oss/' tuna-oss
-      sudo zypper ar -cfg 'https://mirrors.tuna.tsinghua.edu.cn/opensuse/tumbleweed/repo/non-oss/' tuna-non-oss
-      ```
-   2. 添加[清华packman镜像](https://mirrors.tuna.tsinghua.edu.cn/help/opensuse/)（安装codecs必需）
-       1. 打开YaST
-       2. 进入YaST软件源（仓库管理）
-       3. 点击添加
-       4. 选择指定URL
-       5. 输入名称`tuna-packman`与对应的URL`https://mirrors.tuna.tsinghua.edu.cn/packman/suse/openSUSE_Tumbleweed/`
-       6. 点击下一步，等待源刷新
-       7. 完成
-3. [安装codecs](https://en.opensuse.org/SDB:Installing_codecs_from_Packman_repositories#Option_3:_YaST)  
+   1. 已有的仓库不必换成国内仓库镜像
+   3. [安装codecs](https://en.opensuse.org/SDB:Installing_codecs_from_Packman_repositories#Option_3:_YaST)  
    安装前确保添加一个稳定快速的packman仓库镜像，[官网](http://packman.links2linux.org/mirrors)有镜像网站列表。没有codecs就可能无法正常使用某些视频网站。
-4. 安装各类软件
+   4. 安装各类软件
    - 通过Yast安装一些软件  
      打开Yast,按需搜索安装以下软件
        + `git`
